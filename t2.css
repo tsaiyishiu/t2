@@ -1,0 +1,50 @@
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(92, 92, 100);
+    }
+.nav{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    margin: 0 auto;
+    color: azure;
+  }
+.nav a{
+    text-decoration: none;
+}
+.pretty{
+    letter-spacing:5px ;
+    font-size: 20px;
+}
+li{
+    font-size: 5px;
+    color: black;
+    
+}
+.cover{
+    width: 100%;
+}
+.content1{
+    font-size: 0;
+    position: relative;
+}
+.txt1{
+    background-color: gainsboro;
+    opacity: 50%;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 0%;
+    width: 400px;
+    position: absolute;
+    top:250px;
+			left:10px;}
+
