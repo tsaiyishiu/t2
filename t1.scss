@@ -37,9 +37,6 @@ li{
     color: black;
     
 }
-li a{
-    color: aliceblue;
-}
 .cover{
     width: 100%;
 }
@@ -142,15 +139,9 @@ h2{
     height: 200px;
     background-color: rgb(92, 92, 100);
     margin-top: 50px;
-    
-    justify-content: space-around;
-    align-items: center;
-}
-.flex{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px;
 }
 .community{
     color: aliceblue;
@@ -166,31 +157,13 @@ h2{
     
     
 }
-.friend{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
     
 
 .friend p{
     color: aliceblue;
     margin: 0;
         
-}
-.up{
-    background-color: aliceblue;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    margin-top: 5px;
-} 
-.onetwothree{
-    color: aliceblue;
-    text-align: center;
-    margin-top: 45px;
 }
 .contact{
     color: aliceblue;
@@ -207,4 +180,3 @@ h2{
 .c{
     margin: 0;
 }
-
