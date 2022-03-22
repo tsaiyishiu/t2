@@ -1,84 +1,287 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-    
-.main{
-    width: 100%px;
+.menu {
+  width: 300px;
+  height: 900px;
+  background-color: #5c5c64;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-100%);
+}
+
+.menu label {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: azure;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+}
+
+#side-menu:checked + .menu {
+  transform: translateX(0);
+}
+
+#side-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.pretty {
+  font-size: 50px;
+  padding-bottom: 100px;
+  padding-left: 5px;
+}
+
+li {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+.cover {
+  width: 100%;
+}
+
+.content1 {
+  font-size: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt1 {
+  background-color: rgba(220, 220, 220, 0.5);
+  color: #3d3b3b;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storetxt {
+  width: 150px;
+  height: 30px;
+  background-color: #343030;
+  font-size: 15px;
+  opacity: 100%;
+  letter-spacing: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.free {
+  width: 100%;
+  height: 40px;
+  background: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2.5px;
+  font-size: 10px;
+  color: #494a4b;
+}
+
+h1 {
+  letter-spacing: 7px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.solid {
+  width: 40px;
+  height: 30px;
+  border-top: solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.solid1 {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+h2 {
+  font-size: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;
+}
+
+.pic123 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.floor {
+  background-color: #5c5c64;
+  color: aliceblue;
+}
+
+.community p {
+  margin-bottom: 0;
+}
+
+.up {
+  color: black;
+}
+
+.friend p {
+  margin-bottom: 0;
+}
+
+.a {
+  margin-bottom: 0;
+}
+
+.b {
+  margin: 0;
+}
+
+.c {
+  margin-top: 0;
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  #side-menu {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
     height: 200vh;
     margin: auto;
-    
-}
-.menu{
+  }
+
+  .menu {
     width: 100%;
     height: 80px;
-    background-color: rgb(92, 92, 100);
-    }
-.nav{
+    background-color: #5c5c64;
+    transform: translateX(0);
+    position: relative;
+    top: 0;
+  }
+
+  .menu label {
+    display: none;
+  }
+
+  .nav {
     list-style: none;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-around;
     align-items: center;
-    width:70%;
+    width: 70%;
     margin: 0 auto;
     color: azure;
   }
-.nav a{
+
+  .nav a {
     text-decoration: none;
-}
-.pretty{
-    letter-spacing:5px ;
+  }
+
+  .pretty {
+    letter-spacing: 5px;
     font-size: 20px;
-}
-li{
+  }
+
+  li {
     font-size: 5px;
     color: black;
-    
-}
-li a{
+  }
+
+  li a {
     color: aliceblue;
-}
-.cover{
+  }
+
+  .cover {
     width: 100%;
-}
-.content1{
+  }
+
+  .content1 {
     font-size: 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.txt1{
+  }
+
+  .txt1 {
     background-color: rgba(220, 220, 220, 0.5);
-    color: rgb(61, 59, 59);
+    color: #3d3b3b;
     font-size: 40px;
     letter-spacing: 10px;
     margin: auto;
     width: 400px;
     height: 100px;
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.txt1 p{
+  }
+
+  .txt1 p {
     margin-bottom: 80px;
-}
-.storetxt{
+  }
+
+  .storetxt {
     width: 150px;
     height: 30px;
-    background-color: rgb(52, 48, 48);
+    background-color: #343030;
     font-size: 15px;
     opacity: 100%;
     letter-spacing: 0;
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
     bottom: 0;
     top: 0;
@@ -88,8 +291,9 @@ li a{
     color: aliceblue;
     margin: auto;
     margin-top: 60px;
-}
-.free{
+  }
+
+  .free {
     width: 100%;
     height: 40px;
     background: gainsboro;
@@ -97,114 +301,127 @@ li a{
     justify-content: center;
     align-items: center;
     letter-spacing: 5px;
-    color: rgb(73, 74, 75);
-}
-h1{
+    color: #494a4b;
+  }
+
+  h1 {
     letter-spacing: 7px;
     display: flex;
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 40px;
-}
-.solid{
+  }
+
+  .solid {
     width: 40px;
     height: 30px;
-    
     border-top: solid 1px;
     display: flex;
     justify-content: center;
-}
-.solid1{
+  }
+
+  .solid1 {
     display: flex;
     justify-content: center;
     height: 40px;
-}
+  }
 
-h2{
+  h2 {
     font-size: 5px;
     display: flex;
     justify-content: center;
     margin: 0 0 40px;
-}
-.pic123{
+  }
+
+  .pic123 {
     display: flex;
     justify-content: space-around;
-    
-}
-.pic1{
+    flex-direction: row;
+  }
+
+  .pic1 {
     margin-left: 130px;
-}
-.pic3{
+  }
+
+  .pic3 {
     margin-right: 130px;
-}
-.floor{
+  }
+
+  .floor {
     width: 100%;
     height: 200px;
-    background-color: rgb(92, 92, 100);
+    background-color: #5c5c64;
     margin-top: 50px;
-    
     justify-content: space-around;
     align-items: center;
-}
-.flex{
+  }
+
+  .flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
-}
-.community{
+  }
+
+  .community {
     color: aliceblue;
-}
-.community p{
+  }
+
+  .community p {
     letter-spacing: 2px;
     margin: 0;
-}
-.email input{
-    background-color: rgb(92, 92, 100);
+  }
+
+  .email input {
+    background-color: #5c5c64;
     border: solid aliceblue 1px;
     width: 300px;
-    
-    
-}
-.friend{
+  }
+
+  .friend {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-    
+  }
 
-.friend p{
+  .friend p {
     color: aliceblue;
     margin: 0;
-        
-}
-.up{
+    align-self: flex-start;
+  }
+
+  .up {
     background-color: aliceblue;
     width: 100px;
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    
+    align-self: flex-end;
     margin-top: 5px;
-} 
-.onetwothree{
+  }
+
+  .onetwothree {
     color: aliceblue;
     text-align: center;
     margin-top: 45px;
-}
-.contact{
+  }
+
+  .contact {
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.a{
-    margin: 0;
-}
-.b{
-    margin: 0;
-}
-.c{
-    margin: 0;
-}
+  }
 
+  .a {
+    margin: 0;
+  }
+
+  .b {
+    margin: 0;
+  }
+
+  .c {
+    margin: 0;
+  }
+}/*# sourceMappingURL=t2.css.map */
