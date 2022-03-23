@@ -55,9 +55,9 @@ a{
 
 
 .cover{
-    //width: 100%;
+    width: 100%;
    height: 100vh;
-   transform: translateX(-42%);
+   object-fit: cover;
 }
 .content1 div:first-child{
     overflow: hidden;
