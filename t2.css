@@ -57,10 +57,7 @@ a {
 
 .cover {
   height: 100vh;
-  transform: translate(-50%);
-  position: relative;
-  top: 50%;
-  left: 50%;
+  transform: translateX(-42%);
 }
 
 .content1 div:first-child {
@@ -130,21 +127,16 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
-.solid {
-  width: 40px;
-  height: 30px;
-  border-top: solid 1px;
-  display: flex;
-  justify-content: center;
-}
-
-.solid1 {
-  display: flex;
-  justify-content: center;
-  height: 40px;
+h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  border-bottom: 1px solid black;
+  top: 75px;
 }
 
 h2 {
@@ -249,7 +241,7 @@ h2 {
 
   .cover {
     width: 100%;
-  
+    transform: translateX(0);
     height: auto;
   }
 
@@ -319,21 +311,16 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+    position: relative;
   }
 
-  .solid {
-    width: 40px;
-    height: 30px;
-    border-top: solid 1px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .solid1 {
-    display: flex;
-    justify-content: center;
-    height: 40px;
+  h1::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    border-top: solid 1px black;
+    top: 95px;
   }
 
   h2 {
